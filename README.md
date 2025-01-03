@@ -10,9 +10,13 @@ Objective
 This application is designed to help maintain strong professional relationships with other organizations by accurately tracking communication. It ensures timely follow-ups and consistent engagement through a centralized platform. The key features include:
 
 Admin Module: To set up companies and communication parameters.
+
 User Module: To visualize, manage, and perform communication tasks.
+
 Reporting and Analytics Module (Optional): Provides actionable insights into communication trends and performance.
+
 Features and Modules
+
 Admin Module
 Company Management
 Add, edit, and delete company details.
