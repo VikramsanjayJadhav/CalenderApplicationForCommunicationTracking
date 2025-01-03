@@ -1,0 +1,133 @@
+/* Container Styles */
+.container {
+  padding: 20px;
+  background-color: #f4f7fb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Summary Section */
+.summary {
+  display: flex;
+  
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+  flex-wrap: wrap; 
+  align-items: center;
+}
+
+/* Card Styles (Overdue, Due Today) */
+.card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex-grow: 1;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 32px;
+  margin-top: 10px;
+  color: #2c3e50;
+}
+
+/* Overdue and Due Today Specific */
+.overdue {
+  background-color: #f8d7da;
+  /* Light Red Background */
+}
+
+.dueToday {
+  background-color: #d1ecf1;
+  /* Light Blue Background */
+}
+
+/* Separate Grid Layout for Communications */
+.gridWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.gridOverdue,
+.gridToday {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 48%; /* Fixed width for both sections */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between items inside each section */
+}
+
+/* For each grid item */
+.gridItem {
+  background-color: #f4f7fb;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.gridItem p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.gridItem strong {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Vertical Partition */
+.partition {
+  width: 1px;
+  background-color: #ddd;
+  margin: 0 20px;
+}
+
+/* Headings */
+h3 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* No Data State */
+.gridItem p.noData {
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gridWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gridOverdue,
+  .gridToday {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .partition {
+    display: none;
+  }
+}

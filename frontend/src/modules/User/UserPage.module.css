@@ -1,0 +1,194 @@
+/* General table styling */
+.communicationsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #000000;
+  /* Black background */
+  color: #ffffff;
+  /* White text */
+  font-family: 'Arial', sans-serif;
+  /* Apply consistent font */
+}
+
+.communicationsTable th,
+.communicationsTable td {
+  padding: 12px 15px;
+  border: 1px solid #444444;
+  /* Dark grey borders */
+  text-align: left;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+/* Table Headers */
+.communicationsTable th {
+  background-color: #333333;
+  /* Dark grey header background */
+  color: #ffffff;
+  /* White text for headers */
+  text-transform: uppercase;
+  /* Uppercase for better emphasis */
+}
+
+/* Table rows - alternating background */
+.communicationsTable tr:nth-child(even) {
+  background-color: #222222;
+  /* Slightly lighter grey for alternating rows */
+}
+
+.communicationsTable tr:nth-child(odd) {
+  background-color: #111111;
+  /* Darker grey for odd rows */
+}
+
+/* Checkbox styling */
+.communicationsTable td input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Error message */
+.error {
+  color: #dc3545;
+  /* Red color for error message */
+  background-color: #1e1e1e;
+  /* Dark background for error box */
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Responsive table adjustments */
+@media (max-width: 768px) {
+
+  .communicationsTable th,
+  .communicationsTable td {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+/* Header styles */
+.userHeader {
+  display: flex;
+  justify-content: space-between;
+  /* Evenly distribute buttons with space between them */
+  align-items: center;
+  /* Vertically center the buttons */
+  background: linear-gradient(135deg, #e0e7ff, #333333);
+  /* Black background color */
+  padding: 15px 20px;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for depth */
+  gap: 10px;
+  /* Adds space between buttons */
+}
+
+.navButton {
+  background-color: #333333;
+  /* Dark grey background */
+  color: #ffffff;
+  /* White text */
+  border: none;
+  padding: 10px 20px;
+  flex-grow: 1;
+  /* Allows buttons to grow and take equal width */
+  margin: 0 10px;
+  /* Space between buttons */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  text-align: center;
+
+  /* Center text inside the buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  /* Smooth hover effect */
+  font-weight: bold;
+}
+
+.navButton:hover {
+  background-color: #555555;
+  /* Lighter grey on hover */
+}
+
+.navButton:focus {
+  outline: none;
+  /* Remove default button outline */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+  /* Custom focus outline */
+}
+
+/* Notifications button specific styles */
+.notifications {
+  background-color: red;
+  /* Red background for notifications */
+}
+
+.notifications:hover {
+  background-color: #c82333;
+  /* Darker red on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .userHeader {
+    flex-direction: column;
+    /* Stack the buttons vertically on small screens */
+  }
+
+  .navButton {
+    margin: 10px 0;
+    /* Space between buttons when stacked vertically */
+    width: 100%;
+    /* Full width buttons on smaller screens */
+  }
+}
+
+
+/* Company Communications Heading */
+h2 {
+  color: black;
+  /* White text for dark theme */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  /* Consistent font */
+}
+
+/* Add Button Styling */
+.addButton {
+  background-color: #444444;
+  /* Dark grey background for the button */
+  color: #ffffff;
+  /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  /* Slightly rounded corners */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  /* Smooth hover effect */
+  margin-bottom: 20px;
+  /* Spacing below the button */
+  font-weight: bold;
+}
+
+/* Button hover effect */
+.addButton:hover {
+  background-color: #666666;
+  /* Slightly lighter grey on hover */
+}
+
+/* Button focus state */
+.addButton:focus {
+  outline: none;
+  /* Remove default outline */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+  /* Custom focus outline */
+}

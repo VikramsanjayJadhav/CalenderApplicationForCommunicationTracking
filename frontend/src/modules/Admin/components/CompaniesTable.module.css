@@ -1,0 +1,114 @@
+/* CommunicationModal.module.css */
+
+.tableContainer {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  background: linear-gradient(135deg, #e0e7ff, #333333);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tableHeader {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.message {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: black;
+  /* Success message color */
+  text-align: center;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  /* Enables horizontal scrolling if the table is too wide */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.tableHeaderCell {
+  background-color: #333333;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tableCell {
+  border-bottom: 1px solid #ddd;
+}
+
+.tableRow:hover {
+  background-color: #f1f1f1;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.actionButton,
+.deleteButton {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.actionButton {
+  background-color: #28a745;
+  /* Green for Edit button */
+  color: white;
+}
+
+.actionButton:hover {
+  background-color: #218838;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  /* Red for Delete button */
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .tableHeader {
+    font-size: 1.5rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px 10px;
+  }
+
+  .actionButton,
+  .deleteButton {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+}
